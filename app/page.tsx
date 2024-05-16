@@ -5,7 +5,7 @@ export default async function Home() {
   const user = await currentUser();
 
   return (
-    <div>
+    <div className="mt-10 p-6 border">
       {user ? (
         <form action={signOut}>
           <button>ログアウト</button>
@@ -51,15 +51,6 @@ export default async function Home() {
 
 // セッションの維持はどうやって行うのか？
 
-
-
-
-
-
-
-
-
-
 // "use server";
 // "server-only";はどういう使い分け？
 
@@ -97,4 +88,3 @@ export default async function Home() {
 
 // このように、"use server";と"server-only";を使い分けることで、
 // サーバーサイドでのみ実行されるコードを適切に記述することができます。
-
